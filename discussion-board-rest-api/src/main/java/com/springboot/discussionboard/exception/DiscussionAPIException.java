@@ -2,17 +2,17 @@ package com.springboot.discussionboard.exception;
 
 import org.springframework.http.HttpStatus;
 
-public class BlogAPIException extends RuntimeException {
+public class DiscussionAPIException extends RuntimeException {
 
     private HttpStatus status;
     private String message;
 
-    public BlogAPIException(HttpStatus status, String message) {
+    public DiscussionAPIException(HttpStatus status, String message) {
         this.status = status;
         this.message = message;
     }
 
-    public BlogAPIException(String message, HttpStatus status, String message1) {
+    public DiscussionAPIException(String message, HttpStatus status, String message1) {
         super(message);
         this.status = status;
         this.message = message1;
